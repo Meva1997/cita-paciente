@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Administrador de Pacientes</title>
+</head>
+<body>
+    <header>
+        <div class="navegador">
+            <img id="logo" class="logo" alt="logo" src="https://img.freepik.com/vector-premium/plantilla-logotipo-medico_1283348-16989.jpg?semt=ais_hybrid">
+            <div class="navegacion">
+                <nav id="incio" class="inicio"><a href="#titulo">Inicio</a></nav>
+                <nav id="pacientes" class="pacientes"><a href="#nueva-cita">Registro</a></nav>
+                <nav id="informacion" class="informacion"><a href="#lista">Pacientes</a></nav>
+            </div> 
+        </div>
+    </header>
+
+    <main>
+        <h1 id="titulo" class="titulo">Administrador de pacientes</h1>
+         
+        <article class="formulario">
+            <section class="datos" id="datos">
+                <form id="nueva-cita" novalidate>
+                    <h2 class="titulo__2">Datos del paciente</h2>
+                    <label for="nombre">Nombre Paciente:<input type="text" id="nombre" name="nombre" placeholder="Ex. Alejandro Garcia"></label>
+                    <label for="email">Correo electronico:<input type="email" id="email" name="email" placeholder="Ex. alex@email.com"></label>
+                    <label for="telefono">Telefono: <input type="text" id="telefono" name="telefono" placeholder="Ex. (33) 2367897"></label>
+                    <label for="date">Fecha de proxima cita: <input type="date" id="date" name="date"></label>
+                    <label for="sintoms">Sintomas: <textarea id="sintoms" name="sintoms" cols="10" rows="5" placeholder="Dolor de cabeza, etc..."></textarea></label>
+                    <button type="submit" class="btn btn-secondary" name="button" id="button" >Crear cita</button>
+                </form>
+            </section>
+
+           
+            <section class="registrado">
+                <h2 class="titulo__3">Lista de pacientes</h2>
+                <!-- <p id="vacio" class="vacio">No hay pacientes</p> -->
+                        <ul class="lista" id="lista">
+                        </ul>
+            </section>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
